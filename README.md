@@ -38,9 +38,9 @@ By traversing the source texture using the space filling [Z-order curve (Morton 
 
 The table above scales down by a factor of 1.0/4.0 and looks like this. (The size of the intermediate datastructure is  neglectible.)
 
-´´´
+```
 MemoryUsage = Width * Height * Channels * (4.0/3.0);    // target texture including mipmaps
-´´´
+```
 
 | Width | Height | Memory usage (bytes)  |
 | ------------- |:-------------:| -----:|
