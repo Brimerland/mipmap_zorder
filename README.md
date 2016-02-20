@@ -36,7 +36,7 @@ For a target texture containing 4 8bit channels this means:
 ## The idea
 By traversing the source texture using the space filling [Z-order curve (Morton order, Lebesgue curve)](https://en.wikipedia.org/wiki/Z-order_curve) the intermediate texture is not needed anymore. Instead a much smaller datastructure can be used which contains just intermediate results really needed when generating the texels of the mipmap.
 
-The table above scale down by a factor of (1.0/4.0) look like this. (The intermediate datastructure is  neglectible.)
+The table above scales down by a factor of 1.0/4.0 and looks like this. (The size of the intermediate datastructure is  neglectible.)
 
 ´´´
 MemoryUsage = Width * Height * Channels * (4.0/3.0);    // target texture including mipmaps
